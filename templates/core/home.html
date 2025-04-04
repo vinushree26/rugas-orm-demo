@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="display-4 mb-4">Welcome to Order Manager</h1>
+        <div class="d-grid gap-3 col-md-6 mx-auto">
+            <a href="{% url 'login' %}" class="btn btn-primary btn-lg">
+                <i class="bi bi-box-arrow-in-right"></i> Login
+            </a>
+            {% comment %} <a href="{% url 'register' %}" class="btn btn-success btn-lg">
+                <i class="bi bi-person-plus"></i> Register
+            </a> {% endcomment %}
+        </div>
+    </div>
+</div>
+{% endblock %}
